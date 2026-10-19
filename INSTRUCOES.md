@@ -14,8 +14,9 @@ Ao redigir em meu nome, siga `pessoal/references/voice.md`.
 
 ## Só meus
 
-- `pessoal/references/radar-whatsapp.md` — prompt do Radar de respostas pendentes (Claude in Chrome), para rodar no início de cada janela de WhatsApp. Horários, regras e registro do KPI estão no arquivo.
-- `pessoal/scripts/whatsapp_pendencias.py` — lê os exports do WhatsApp em `C:\Users\Laris\.aios\whatsapp\`.
+- `pessoal/references/radar-whatsapp.md` — Radar de respostas pendentes (fase 2). Quando eu disser "roda o radar", siga esse arquivo: lista o que devo e o que me devem e escreve as sugestões para eu enviar. Roda sozinho em dias úteis às 9h, 11h, 14h, 16h e 18h (`pessoal/scripts/radar_agendado.py`), que só avisa.
+- `pessoal/scripts/whatsapp_pendencias.py` — triagem de pendências; lê o banco da ponte do WhatsApp (padrão) ou os exports (`--exports`).
+- **WhatsApp pessoal (MCP, desde 19/10/2026, só leitura):** `lharries/whatsapp-mcp` em `C:\Users\Laris\whatsapp-mcp` (fora do OneDrive), registrado no escopo de usuário como `whatsapp`. A ponte `whatsapp-bridge\whatsapp-bridge.exe` precisa estar aberta para chegar mensagem nova; o QR expira a cada ~20 dias. Envio bloqueado em `~/.claude/settings.json`: sugestões de resposta vão no chat e eu envio à mão. Histórico: só o recente que o celular mandou ao conectar (desde 22/07/2026).
 - `pessoal/decisions/log.md` — decisões pessoais.
 - `pessoal/archives/` — onboarding original (03/10/2026).
 
