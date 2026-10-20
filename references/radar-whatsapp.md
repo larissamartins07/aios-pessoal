@@ -41,7 +41,8 @@ PRIORITÁRIAS (revisar sempre, até 14 dias, mesmo sem atividade recente)
 
 ESCOPO (as demais)
 - Conversas de trabalho com atividade nos últimos 7 dias.
-- Ignorar: Carrinho dos noivos; #12 R1157, N145; Igor Regis; Família Matos e amigos; Frederico; Clínica Dermatológica HR; qualquer outro grupo claramente de família ou amigos.
+- Ignorar: Carrinho dos noivos; #12 R1157, N145; Igor Regis; Família Matos e amigos; Frederico; Clínica Dermatológica HR; Alessandra M Warmling; Grupo Souza Martins; qualquer outro grupo claramente de família ou amigos.
+- Ignorar também (trabalho, mas sem interesse): Agnes, transportadora MID (86278091579606). Lista `IGNORADAS` do script.
 - Ignorar canais, listas de transmissão e grupos de massa ("Abastecimento", "Grupo Vip Mexidona", nome de rede de supermercado como FESTVAL, MUFFATO, GIASSI).
 - Ignorar grupos em que a Larissa não escreveu nos últimos 7 dias (menos os prioritários).
 - O script já aplica esses filtros. Conversa pessoal nova vai para a lista `PESSOAIS` do script e para a lista acima.

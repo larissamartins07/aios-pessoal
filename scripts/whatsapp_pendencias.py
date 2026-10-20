@@ -34,8 +34,10 @@ BANCO = Path.home() / "whatsapp-mcp" / "whatsapp-bridge" / "store" / "messages.d
 EU = "Larissa Leal"
 MEU_NUMERO = "554898151718"  # conversa consigo mesma (bloco de notas) não entra
 PRIORITARIAS = re.compile(r"olist envios|prioridades|administrativo|financeiro|\brh\b|mexidona|jessica", re.I)
-PESSOAIS = re.compile(r"carrinho dos noivos|#12 r1157|igor regis|fam[ií]lia matos|frederico|cl[ií]nica dermatol", re.I)
+PESSOAIS = re.compile(r"carrinho dos noivos|#12 r1157|igor regis|fam[ií]lia matos|frederico|cl[ií]nica dermatol|"
+                      r"alessandra m warmling|grupo souza martins", re.I)
 MASSA = re.compile(r"abastecimento|grupo vip mexidona|festval|muffato|giassi", re.I)
+IGNORADAS = re.compile(r"86278091579606")  # trabalho, mas a Larissa pediu para ignorar (Agnes, transportadora MID)
 MIDIA = {"audio": "áudio", "image": "imagem", "video": "vídeo", "document": "documento", "sticker": "figurinha"}
 LINHA = re.compile(r"^\[(\d{2}/\d{2}/\d{4}), (\d{2}:\d{2}:\d{2})\] ([^:]+): (.*)$")
 INVISIVEIS = dict.fromkeys(map(ord, "\u200e\u200f\u202a\u202c\u2068\u2069\ufeff"), None)
@@ -79,7 +81,7 @@ def do_banco(desde, filtro):
     conversas = []
     for jid, nome in con.execute("select jid, coalesce(name, jid) from chats order by last_message_time desc"):
         if jid.endswith(("@newsletter", "@broadcast")) or jid.startswith(MEU_NUMERO) or PESSOAIS.search(nome) \
-                or MASSA.search(nome):
+                or MASSA.search(nome) or IGNORADAS.search(jid):
             continue
         if filtro.lower() not in nome.lower():
             continue
