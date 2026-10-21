@@ -12,6 +12,8 @@ Larissa, cofundadora da Mexidona. Engenheira mecânica (qualidade, industrializa
 
 Ao redigir em meu nome, siga `pessoal/references/voice.md`.
 
+Mensagem de WhatsApp (ou qualquer texto para eu enviar) vem sempre dentro de um bloco de código, pronta para copiar: sem ">" de citação, sem negrito ou links dentro, listas com "-". Comentários ficam fora do bloco. (21/10/2026)
+
 ## Só meus
 
 - `pessoal/references/radar-whatsapp.md` — Radar de respostas pendentes (fase 2). Quando eu disser "roda o radar", siga esse arquivo: lista o que devo e o que me devem e escreve as sugestões para eu enviar. Roda sozinho em dias úteis às 9h, 11h, 14h, 16h e 18h (`pessoal/scripts/radar_agendado.py`), que só avisa.
